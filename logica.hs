@@ -17,14 +17,14 @@ addItem tempo itemId nomeItem qtd categoria invent
         Nothing ->
           let item = Item itemId nomeItem qtd categoria
               novoInv = Map.insert itemId item invent
-              logEntry = LogEntry tempo Add ("Criado item " ++ nomeItem) Sucesso
+              logEntry = LogEntry tempo Add (itemId ++ " Criado item " ++ nomeItem) Sucesso
           in Right (novoInv, logEntry)
 
         Just existente ->
           let novaQtd = quantidade existente + qtd
               atualizado = existente { quantidade = novaQtd }
               novoInv = Map.insert itemId atualizado invent
-              logEntry = LogEntry tempo Add ("Atualizada quantidade de " ++ nomeItem) Sucesso
+              logEntry = LogEntry tempo Add (itemId ++ " Atualizada quantidade de " ++ nomeItem) Sucesso
           in Right (novoInv, logEntry)
 
 
@@ -53,7 +53,7 @@ removeItem tempo itemId qtdRemover invent =
                     then Map.delete itemId invent
                     else Map.insert itemId (item { quantidade = qtdNova }) invent
                 logEntry = LogEntry tempo Remove 
-                           ("removidas " ++ show qtdRemover ++ " unidades de " ++ itemId)
+                           (itemId ++ ", removidas " ++ show qtdRemover ++ " unidades")
                            Sucesso
             in Right (novoInv, logEntry)
 

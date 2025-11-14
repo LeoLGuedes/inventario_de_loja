@@ -1,15 +1,13 @@
-LogEntry {timestamp = 2025-11-14 19:23:40.062456908 UTC, acao = Add, detalhes = "Criado item mouse", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:23:55.967692329 UTC, acao = Add, detalhes = "Criado item teclado", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:24:26.616331243 UTC, acao = Add, detalhes = "Criado item caneta", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:24:43.949113443 UTC, acao = Add, detalhes = "Criado item celular", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:25:04.592208429 UTC, acao = Add, detalhes = "Criado item monitor", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:25:31.746958964 UTC, acao = Add, detalhes = "Criado item garrafinha", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:26:01.415621282 UTC, acao = Add, detalhes = "Criado item violao", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:26:27.98759582 UTC, acao = Add, detalhes = "Criado item fone de mesa", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:26:52.115467552 UTC, acao = Add, detalhes = "Criado item borracha", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 19:27:28.487943845 UTC, acao = Add, detalhes = "Criado item creatina", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 20:11:29.602448295 UTC, acao = Add, detalhes = "Atualizada quantidade de mouse", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 20:12:13.682790291 UTC, acao = Add, detalhes = "Atualizada quantidade de mouse", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 20:13:11.173301598 UTC, acao = Remove, detalhes = "removidas 5 unidades de 1", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 20:13:42.567902202 UTC, acao = Remove, detalhes = "removidas 5 unidades de 1", status = Sucesso}
-LogEntry {timestamp = 2025-11-14 20:14:08.006323227 UTC, acao = Add, detalhes = "Atualizada quantidade de mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:05:10.474680504 UTC, acao = Add, detalhes = "1 Criado item mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:05:23.310400718 UTC, acao = Add, detalhes = "2 Criado item mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:05:45.157404851 UTC, acao = Add, detalhes = "3 Criado item ceulular", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:05:59.562874182 UTC, acao = Add, detalhes = "4 Criado item monitor", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:06:21.753191086 UTC, acao = Add, detalhes = "5 Criado item garrafinha", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:06:45.285807493 UTC, acao = Add, detalhes = "6 Criado item caneta", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:07:03.096821335 UTC, acao = Add, detalhes = "7 Criado item violao", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:07:23.097000466 UTC, acao = Add, detalhes = "8 Criado item fone de mesa", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:07:44.040691588 UTC, acao = Add, detalhes = "9 Criado item borracha", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:08:18.460848194 UTC, acao = Add, detalhes = "10 Criado item creatina", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:08:41.126218363 UTC, acao = Add, detalhes = "1 Atualizada quantidade de mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:08:55.473751242 UTC, acao = Remove, detalhes = "1, removidas 2 unidades", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 21:10:08.481410744 UTC, acao = Remove, detalhes = "1, removidas 1 unidades", status = Sucesso}

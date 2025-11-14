@@ -175,7 +175,7 @@ relatorio inventario logs = do
         Just itemId -> putStrLn ("ID do Item mais movimentado: " ++ itemId)
 
 
-    putStrLn "\n--- HISTÓRICO POR ITEM ---"
+    putStrLn "\nHISTÓRICO POR ITEM"
     itemID <- prompt "Digite o ID do item para ver o histórico ou deixe em branco para pular"
     
     if null itemID
