@@ -165,8 +165,29 @@ listar inventario logs = do
 
 relatorio :: Inventario -> [LogEntry] -> IO ()
 relatorio inventario logs = do
-    putStrLn "\nRELATÓRIO DE ERROS"
+    putStrLn "\n RELATÓRIO DE ERROS"
     mapM_ print (logsDeErro logs)
+    
+
+    putStrLn "\nITEM MAIS MOVIMENTADO"
+    case itemMaisMovimentado logs of
+        Nothing -> putStrLn "Nenhum item movimentado encontrado"
+        Just itemId -> putStrLn ("ID do Item mais movimentado: " ++ itemId)
+
+
+    putStrLn "\n--- HISTÓRICO POR ITEM ---"
+    itemID <- prompt "Digite o ID do item para ver o histórico ou deixe em branco para pular"
+    
+    if null itemID
+        then putStrLn "Consulta de histórico pulada."
+        else do
+            let historico = historicoPorItem itemID logs
+            if null historico
+                then putStrLn ("Nenhum histórico encontrado para o ID: " ++ itemID)
+                else do
+                    putStrLn ("Histórico para o item ID: " ++ itemID)
+                    mapM_ print historico
+    
     pausar
     menu inventario logs
 
