@@ -4,29 +4,28 @@ import Dados
 import Data.List (sortOn, groupBy)
 import Data.Maybe (mapMaybe)
 
--- logs contendo falhas
+-- logs que tem falhas
 logsDeErro :: [LogEntry] -> [LogEntry]
 logsDeErro = filter (\l -> case status l of Falha _ -> True; _ -> False)
 
--- histórico por ID (simplificado)
+
 historicoPorItem :: String -> [LogEntry] -> [LogEntry]
 historicoPorItem itemId =
   filter (\l -> itemId `elem` words (detalhes l))
 
--- extrai o possível ID do item da primeira palavra do detalhes
--- mantém o nome 'extrairId' como você pediu, mas retorna Maybe
+
 extrairId :: LogEntry -> Maybe String
 extrairId loge =
   case words (detalhes loge) of
     (x:_) -> Just x
     []    -> Nothing
 
--- Auxiliar para pegar o maior grupo (retorna Maybe para evitar partials)
+-- ajuda a pegar o maior grupo
 maximumByLength :: [[a]] -> Maybe [a]
 maximumByLength [] = Nothing
 maximumByLength (g:gs) = Just $ foldl (\a b -> if length a >= length b then a else b) g gs
 
--- item mais movimentado com base na primeira palavra do detalhe
+-- item mais movimentado de acordo com a primeira palavra, que é o ID
 itemMaisMovimentado :: [LogEntry] -> Maybe String
 itemMaisMovimentado logs =
   let

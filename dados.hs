@@ -8,7 +8,7 @@ import Data.Time (UTCTime)
 data Item = Item{ itemID:: String, nome :: String, quantidade :: Int, categoria  :: String }
   deriving (Show, Read, Eq)
 
--- O inventario é um Map de ID → Item
+-- O inventario é um Map de ID 
 type Inventario = Map String Item
 
 -- Ações permitidas no log
