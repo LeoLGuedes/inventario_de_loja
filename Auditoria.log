@@ -1,0 +1,10 @@
+LogEntry {timestamp = 2025-11-14 19:23:40.062456908 UTC, acao = Add, detalhes = "Criado item mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:23:55.967692329 UTC, acao = Add, detalhes = "Criado item teclado", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:24:26.616331243 UTC, acao = Add, detalhes = "Criado item caneta", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:24:43.949113443 UTC, acao = Add, detalhes = "Criado item celular", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:25:04.592208429 UTC, acao = Add, detalhes = "Criado item monitor", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:25:31.746958964 UTC, acao = Add, detalhes = "Criado item garrafinha", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:26:01.415621282 UTC, acao = Add, detalhes = "Criado item violao", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:26:27.98759582 UTC, acao = Add, detalhes = "Criado item fone de mesa", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:26:52.115467552 UTC, acao = Add, detalhes = "Criado item borracha", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 19:27:28.487943845 UTC, acao = Add, detalhes = "Criado item creatina", status = Sucesso}
