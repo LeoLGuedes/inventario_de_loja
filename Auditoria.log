@@ -8,3 +8,8 @@ LogEntry {timestamp = 2025-11-14 19:26:01.415621282 UTC, acao = Add, detalhes = 
 LogEntry {timestamp = 2025-11-14 19:26:27.98759582 UTC, acao = Add, detalhes = "Criado item fone de mesa", status = Sucesso}
 LogEntry {timestamp = 2025-11-14 19:26:52.115467552 UTC, acao = Add, detalhes = "Criado item borracha", status = Sucesso}
 LogEntry {timestamp = 2025-11-14 19:27:28.487943845 UTC, acao = Add, detalhes = "Criado item creatina", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 20:11:29.602448295 UTC, acao = Add, detalhes = "Atualizada quantidade de mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 20:12:13.682790291 UTC, acao = Add, detalhes = "Atualizada quantidade de mouse", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 20:13:11.173301598 UTC, acao = Remove, detalhes = "removidas 5 unidades de 1", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 20:13:42.567902202 UTC, acao = Remove, detalhes = "removidas 5 unidades de 1", status = Sucesso}
+LogEntry {timestamp = 2025-11-14 20:14:08.006323227 UTC, acao = Add, detalhes = "Atualizada quantidade de mouse", status = Sucesso}

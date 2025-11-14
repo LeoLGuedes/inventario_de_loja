@@ -10,6 +10,10 @@ import System.IO
 import Control.Exception (catch, IOException)
 import Data.Time (UTCTime)
 import qualified Data.Map.Strict as Map
+import System.IO (withFile, IOMode(AppendMode), hPutStr) 
+import System.IO (withFile, IOMode(ReadMode), hGetContents)
+import Control.Exception (evaluate)
+
 
 import Dados
 
@@ -41,9 +45,12 @@ carregarInventario =
 
 carregarLogs :: IO [LogEntry]
 carregarLogs =
-  (do txt <- readFile arquivoLog
-      let entradas = map read (lines txt) :: [LogEntry]
-      return entradas
+  (do 
+    entradas <- withFile arquivoLog ReadMode $ \handle -> do
+      txt <- hGetContents handle
+      evaluate (length (map read (lines txt) :: [LogEntry]))
+      return (map read (lines txt) :: [LogEntry])
+    return entradas
   ) `catch` handler
   where
     handler :: IOException -> IO [LogEntry]
@@ -65,8 +72,11 @@ salvarInventario inv =
 --  REGISTRAR LOG
 
 
+
 registrarLog :: LogEntry -> IO ()
-registrarLog entry = appendFile arquivoLog (show entry ++ "\n")
+registrarLog entry = 
+    withFile arquivoLog AppendMode $ \handle ->
+        hPutStr handle (show entry ++ "\n")
 
 
 --  REGISTRAR FALHA AUTOMATIZADA
